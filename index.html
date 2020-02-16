@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+</head>
+<body> 
+        <H2>Create a New Event</H2>
+                     
+    <form name="RegForm" onsubmit="return validateForm()">
+        <table class="tables">
+            
+            <tr>
+                <td>Event Type: </td>
+                <td>
+                    <select class="selectOne" name="selectType">
+                        <option value="none" selected disabled hidden> Select an Event </option>
+                        <option>Event 1</option>
+                        <option>Event 2</option>
+                        <option>Event 3</option>
+                        <option>Event 4</option>
+                      </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Event Title: </td>
+                <td><input type="text" name="eventTitle"></td>
+            </tr>
+            
+            <tr>
+                <td>Event Date: </td>
+                <td><input type="date" name="dateOne"> To <input type="date" name="dateTwo"></td>
+            </tr>
+            
+            <tr>
+                <td>Posting Date: </td>
+                <td><input type="date" name="postingDate"></td>
+                
+            </tr>
+        </table>
+        <br>
+        <input type="checkbox" name="check1">Is a Registration Required? <br><br>
+        <input type="checkbox" name="check2">Is this event associated with any Family Programs?<br><br>
+        <input type="checkbox" name="check3">Upon Registration Completion, Are Users to Receive an auto Generated Email?<br><br>
+        <input type="checkbox" name="check4">Is There a Point of Contact?<br><br>
+        <input type="checkbox" name="check5">Is There a Hosting Poing of Contact?<br><br>
+        <input type="submit" value="Submit" name="Submit">
+        <input type="reset" value="Cancel" name="Reset"> 
+    </form>
+    
+</body>
+</html>
